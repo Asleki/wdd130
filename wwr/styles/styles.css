@@ -1,0 +1,143 @@
+/* Define root variables for styling */
+:root {
+    --primary-color: #269cff; /* Blue for primary elements */
+    --secondary-color: #62b250; /* Green for accents */
+    --neutral-color: #d1d2df; /* Light gray for backgrounds */
+    --accent-color: #26c9cf; /* Cyan for hover effects */
+    --heading-font: 'Oswald', sans-serif; /* Heading font */
+    --body-font: 'Open Sans', sans-serif; /* Body text font */
+}
+
+/* General Styles */
+body {
+    font-family: var(--body-font);
+    margin: 0;
+    padding: 0;
+    background-color: var(--neutral-color);
+    color: #333;
+}
+
+/* Header Styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary-color);
+    padding: 1rem;
+}
+
+header .logo {
+    max-width: 150px;
+    height: auto;
+}
+
+nav {
+    display: flex;
+    gap: 1rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-family: var(--heading-font);
+}
+
+nav a:hover {
+    color: var(--accent-color); /* Cyan hover effect */
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    background-image: url('../images/herobackground.jpg'); /* Ensure path is correct */
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero h1 {
+    position: absolute;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent overlay */
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-size: 2.5rem;
+}
+
+/* Article Section */
+article {
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 80%;
+}
+
+article img {
+    float: right;
+    margin-left: 1rem;
+    max-width: 150px;
+    border-radius: 50%;
+}
+
+/* History and Adventure Sections */
+section h2 {
+    font-family: var(--heading-font);
+    color: var(--secondary-color); /* Green for headings */
+}
+
+section p, section img {
+    margin: 1rem 0;
+}
+
+section img {
+    display: inline-block;
+    width: 100px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer Section */
+footer {
+    display: flex;
+    flex-direction: column; /* Stacks the icons above the paragraph */
+    align-items: flex-end; /* Aligns content to the far right */
+    background-color: var(--primary-color);
+    padding: 1rem;
+    color: white;
+    text-align: right; /* Aligns text to the right */
+}
+
+footer p {
+    margin: 0;
+    max-width: 100%; /* Ensures the paragraph fits in a single line */
+    line-height: 1.5; /* Adds readability for multi-line paragraphs */
+    text-align: center; /* Centers the second line of text (if any) */
+}
+
+footer .social-icons {
+    display: flex; /* Aligns icons horizontally */
+    gap: 0.5rem; /* Adds space between the icons */
+    margin-bottom: 0.5rem; /* Adds space below the icons */
+}
+
+footer .social-icons a {
+    text-decoration: none; /* Removes underline from links */
+}
+
+footer .social-icons a img {
+    width: 48px; /* Sets standard icon size */
+    height: 48px;
+    display: inline-block;
+}
+
+footer .social-icons a:hover img {
+    filter: brightness(1.2); /* Slightly brightens the icons on hover */
+}
