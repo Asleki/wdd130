@@ -32,22 +32,13 @@ header .logo {
 
 nav {
     display: flex;
-    flex-direction: row;
-    gap: 20px;
-    padding: 10px;
-    justify-content: center;
-    background-color: var(--primary-color);
-    
+    gap: 1rem;
 }
 
 nav a {
     color: white;
     text-decoration: none;
     font-family: var(--heading-font);
-    padding: 5px 10px;
-    border-radius: 0px;
-    transition: all 0.3s ease-in-out;
-    
 }
 
 
@@ -104,10 +95,6 @@ section h2 {
     font-family: Arial, sans-serif;
     font-size: 2rem;
     color: #333;
-    grid-column: 2; /* Center the heading */
-    text-align: center; /* Center the text */
-
-
 }
 .history {
     display: grid;
@@ -156,26 +143,23 @@ section figcaption {
     font-size: 0.9rem;
     color: #555;
 }
-/* Footer Section */
+/* Footer Styling */
 footer {
-    text-align: center;
-    background: var(--primary-color);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: var(--primary-color);
     padding: 1rem;
     color: white;
 }
 
 footer .social-icons {
     display: flex;
-    justify-content: center;
     gap: 1rem;
-    margin-bottom: 1rem;
 }
 
 footer .social-icons img {
     width: 30px;
-    width: 30px; /* Standard icon size */
-    height: auto; /* Maintain aspect ratio */
-    display: inline-block; /* Keep icons in a row */
-    filter: brightness(0.9); /* Slightly reduce brightness for style */
+    height: auto;
 }
 
