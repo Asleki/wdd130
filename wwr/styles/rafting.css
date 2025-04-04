@@ -56,6 +56,99 @@ nav a:hover {
     color: var(--accent-color); /* Cyan hover effect */
 }
 
-section h1, p{
+section h1, h2, p{
     text-align: center;
 }
+
+section .map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.figure-container {
+    display: flex;
+    justify-content: space-around; /* Distributes the figures evenly */
+    flex-wrap: wrap; /* Allows the figures to wrap to the next line if space is limited */
+    margin: 20px 0;
+  }
+  
+  .figure-container figure {
+    display: flex;
+    flex-direction: column; /* Stacks the image and caption vertically */
+    align-items: center; /* Centers the image and caption horizontally */
+    text-align: center; /* Centers the caption text */
+    max-width: 200px; /* Sets a max width for the figure */
+    margin: 10px; /* Adds spacing between figures */
+  }
+  
+  .figure-container img {
+    width: 100%;
+    height: auto; /* Keeps the aspect ratio */
+    border: 2px solid #ccc; /* Adds a border for better visual separation */
+    border-radius: 5px; /* Slightly rounds the edges of the image */
+  }
+  
+  .figure-container figcaption {
+    margin-top: 8px; /* Adds space between the image and caption */
+    font-size: 14px;
+    color: #333; /* Adjusts the caption text color */
+  }
+
+  form {
+    display: flex;
+    flex-direction: column; /* Ensures the form content stacks vertically */
+    align-items: center; /* Horizontally centers the content within the form */
+    justify-content: center; /* Ensures vertical alignment if needed */
+    margin: 0 auto; /* Centers the form itself within its container */
+    max-width: 400px; /* Sets a maximum width for the form to prevent it from stretching too much */
+    padding: 20px; /* Adds some padding for spacing */
+    border: 2px solid #ccc; /* Adds a border around the form */
+    border-radius: 8px; /* Rounds the form edges */
+    background-color: #f9f9f9; /* Adds a light background to distinguish it */
+  }
+  
+  label, input, textarea, fieldset, button {
+    width: 100%; /* Makes input fields stretch to the form's width */
+    margin-bottom: 12px; /* Adds spacing between elements */
+  }
+  
+  button {
+    width: auto; /* Makes the button adjust to its content */
+    padding: 10px 20px; /* Adds padding to the button for a better look */
+    background-color: #007BFF; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none; /* Removes button border */
+    border-radius: 5px; /* Slightly rounds button corners */
+    cursor: pointer; /* Makes it obvious the button is clickable */
+  }
+  
+  button:hover {
+    background-color: #0056b3; /* Darker shade for hover effect */
+  }
+  /* Footer Section */
+  footer {    
+    text-align: center;
+    background: var(--primary-color);
+    padding: 1rem;
+    color: white;
+}
+
+footer .social-icons {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+footer .social-icons img {
+    width: 30px;
+    width: 30px; /* Standard icon size */
+    height: auto; /* Maintain aspect ratio */
+    display: flex; /* Keep icons in a row */
+    filter: brightness(0.9); /* Slightly reduce brightness for style */
+}
+
+
+
