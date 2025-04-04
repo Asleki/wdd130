@@ -59,8 +59,9 @@ nav a:hover {
 /* Hero Section */
 .hero {
     position: relative;
-    background-image: url('../images/herobackground.jpg'); /* Ensure path is correct */
+    background-image: url('../images/herobackground.jpg');
     background-size: cover;
+    background-repeat: no-repeat;
     background-position: center;
     height: 400px;
     display: flex;
@@ -68,23 +69,37 @@ nav a:hover {
     justify-content: center;
     align-items: center;
     border-radius: 3px;
+    
 }
 
 .hero h1 {
-    position: relative;
-    text-align: center;
-    color: white;
+    position: absolute; 
+    bottom: 75%;
     
-    padding: 0.5rem 1rem;
-    border-radius: 3px;
+    left: 50%; /* Centers horizontally */
+    transform: translate(-50%, -50%);
+    color: white;
     font-size: 2.5rem;
-    margin-top: -331px;
+    padding: 0.5rem 1rem;
+    background: rgba(0, 0, 0, 0.5); /* Adds background for readability */
+    border-radius: 3px;
+    text-align: center;
+    z-index: 1;
 }
 
-.hero p {
-    font-size: medium;
-    max-width: 600px;
-    line-height: normal;
+.hero article {
+    margin-top: 50px;
+    text-align: center;
+    max-width: 1200px;
+    z-index: 0;
+}
+
+.hero .client-img {
+    width: 100%; /* Ensures responsiveness */
+    max-width: 300px; /* Sets reasonable max size */
+    height: auto;
+    border-radius: 5px;
+    margin: 20px 0;
 }
 
 
