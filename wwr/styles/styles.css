@@ -2,7 +2,7 @@
 :root {
     --primary-color: #269cff; /* Blue for primary elements */
     --secondary-color: #121a10; /* Green for accents */
-    --neutral-color: #d1d2df; /* Light gray for backgrounds */
+    --neutral-color: #e9eaf8; /* Light gray for backgrounds */
     --accent-color: #26c9cf; /* Cyan for hover effects */
     --heading-font: 'Oswald', sans-serif; /* Heading font */
     --body-font: 'Open Sans', sans-serif; /* Body text font */
