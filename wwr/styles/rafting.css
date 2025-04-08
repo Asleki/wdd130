@@ -206,6 +206,158 @@ section .map {
     color: #333;
 }
 
+/* Trips */
+.trip-descriptions {
+  margin-bottom: 20px; /* Ensure proper spacing before the next section */
+}
+.trip-descriptions {
+  margin-bottom: 40px; /* Creates space between sections */
+}
+
+/* General Layout for the Section */
+.trip-section {
+  display: flex; /* Places tables side by side */
+  justify-content: space-between; /* Space between tables */
+  align-items: flex-start; /* Aligns tables at the top */
+  gap: 40px; /* Space between the left and right tables */
+  margin: 25px;
+}
+
+/* Trips Table Container */
+.trip-table-container {
+  width: 60%; /* Trips table takes up more space */
+}
+
+/* Currency Converter Table Container */
+.currency-converter-container {
+  width: 40%; /* Currency converter takes less space */
+}
+
+/* Table Styling */
+.styled-table,
+.currency-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 15px 0;
+  font-size: 1rem;
+  text-align: left;
+  border: 1px solid #dddddd; /* Adds border around tables */
+}
+
+/* Table Header Styling */
+.styled-table thead tr,
+.currency-table thead tr {
+  background-color: #269cff; /* Header background color */
+  color: white;
+}
+
+.styled-table th,
+.currency-table th,
+.styled-table td,
+.currency-table td {
+  padding: 12px 15px; /* Padding within cells */
+  border: 1px solid #dddddd; /* Separates columns and rows */
+}
+
+/* Row Hover Effect */
+.styled-table tbody tr:hover,
+.currency-table tbody tr:hover {
+  background-color: #d1d2df; /* Highlight row on hover */
+  cursor: pointer;
+}
+
+/* Column Hover Effect */
+.styled-table tbody td:hover,
+.currency-table tbody td:hover {
+  background-color: #e6e8f0; /* Column highlight color */
+}
+
+/* Header Text Styling */
+.styled-table th,
+.currency-table th {
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center; /* Centers header text */
+}
+
+/* Center Content Within Tables */
+.styled-table td,
+.currency-table td {
+  text-align: center;
+}
+/* General Button Styles */
+.book-now-button {
+  display: inline-block;
+  background-color: #269cff; /* Primary color for buttons */
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.3s; /* Smooth hover effects */
+  margin-top: 10px;
+}
+
+/* Button Hover Effect */
+.book-now-button:hover {
+  background-color: #26cf2f; /* Lighter shade for hover */
+  transform: scale(1.1); /* Slightly enlarge the button on hover */
+}
+
+/* Image Hover Effects */
+/* Container for Horizontal Layout */
+.trip-grid {
+  display: flex; /* Aligns items horizontally */
+  gap: 25px; /* Space between articles */
+  justify-content: center; /* Centers the grid */
+  margin: 0 auto; /* Centers the entire container */
+}
+
+/* Individual Article Styling */
+.trip-descriptions article {
+  text-align: center; /* Centers content within each article */
+  max-width: 300px; /* Sets a uniform width for articles */
+}
+
+/* Image Styling */
+.trip-descriptions img {
+  width: 100%; /* Makes images responsive */
+  border-radius: 8px; /* Rounds corners for aesthetics */
+  transition: transform 0.3s, box-shadow 0.3s; /* Adds hover effects */
+}
+
+.trip-descriptions img:hover {
+  transform: scale(1.05); /* Adds zoom effect on hover */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Adds shadow for depth */
+}
+
+/* "Book Now" Button Styles */
+.book-now-button {
+  display: inline-block;
+  background-color: #269cff; /* Primary button color */
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.3s; /* Smooth hover effect */
+  margin-top: 10px;
+}
+
+.book-now-button:hover {
+  background-color: #26c9cf; /* Lighter shade for hover */
+  transform: scale(1.1); /* Enlarges button slightly on hover */
+}
+
+/* Optional: Add space between sections */
+.trip-descriptions {
+  margin-bottom: 40px;
+}
+
+
+
+
+
 
   form {
     display: flex;
@@ -244,6 +396,7 @@ footer {
     background: var(--primary-color);
     padding: 1rem;
     color: white;
+    margin-top: 20px;
 }
 
 footer .social-icons {
