@@ -1,33 +1,69 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
 <head>
-    <link rel="stylesheet" href="styles/home.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alex Malunda | WDD 130</title>
-    <meta name="description" content="Alex Malunda, WDD 130 course, homepage for showcasing web development skills and projects."> 
-    <meta name="author" content="Alex Malunda">
+    <title>White Water Rafting</title>
+    <link rel="stylesheet" href="styles/rafting.css">
 </head>
 <body>
     <header>
+        <img src="images/mysitelogo.png" alt="Whitewater Rafting Logo" class="logo">
         <nav>
-            <a href="#">HOME</a>
-            <a href="">Rafting Website</a>
-
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a>
         </nav>
     </header>
     <main>
-        <h1>Alex Malunda | WDD 130</h1>
-        <img src="images/Profile.JPG" alt="Hello, My name is Alex Malunda" width="200">
-        <p>Hi, I’m Alex Malunda, a dedicated software development student passionate about creating user-friendly and visually appealing web applications. My programming journey began with Python, which helped me build a strong foundation in coding and problem-solving. Now, I'm expanding my skills in HTML, CSS, and version control using Git to craft websites that are both functional and aesthetically engaging. I love tackling coding challenges and always strive for best practices in my work. Let’s connect and build something amazing together!            </p>
+        <div class="hero">
+            <img src="images/herobackground.jpg" alt="Whitewater Rafting Adventure" class="hero-img">
+            <h1>Experience Thrill Like Never Before</h1>
+
+        </div>
+        <section class="newsletter">
+            <h2>Join Our Newsletter</h2>
+            <form action="/subscribe" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <button type="submit">Sign Up</button>
+            </form>
+        </section>
+        <section class="call-to-action">
+            <h2>Plan Your Adventure Today</h2>
+            <a href="trips.html" class="cta-button">Explore Our Trips</a>
+        </section>
+        <section class="grid-container">
+            <figure class="item">
+                <img src="images/rafting9.jpeg" alt="Rafting Adventure">
+                <figcaption>Experience the thrill of white-water rafting like never before.</figcaption>
+            </figure>
+            <figure class="item">
+                <img src="images/rafting10.jpeg" alt="River Views">
+                <figcaption>Marvel at breathtaking river views and reconnect with nature.</figcaption>
+            </figure>
+            <figure class="item">
+                <img src="images/rafting11.jpeg" alt="Rafting Adventure">
+                <figcaption>Dive into the adventure of a lifetime with exhilarating white-water rafting experiences.</figcaption>
+            </figure>
+        </section>
+        
     </main>
-    <aside>
-        <h2>Kenya</h2>
-        <img src="images/kenya_wildlife.jpeg" alt="A beautiful landscape representing Kenya" width="300"> 
-        <p>Kenya, located in East Africa, is known for its diverse landscapes ranging from savannas to the Great Rift Valley and lakes. Its capital, Nairobi, is a bustling metropolis, while its coastline along the Indian Ocean offers pristine beaches. Kenya is renowned for its wildlife and national parks like Maasai Mara, home to the annual wildebeest migration. The country's rich cultural heritage is reflected in its vibrant traditions and cuisine.</p>
-    </aside>
     <footer>
-        <p>&copy; 2025 | Alex Malunda | Nairobi, Kenya</p>
+        <div class="social-icons">
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+                <img src="images/fbicon.png" alt="Facebook Icon">
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+                <img src="images/instagramicon.png" alt="Instagram Icon">
+            </a>
+            <a href="https://x.com" target="_blank" rel="noopener noreferrer">
+                <img src="images/xicon.png" alt="Twitter Icon">
+            </a>
+        </div>
+        <p>&copy; 2025 Whitewater Rafting | Designed by Alex Malunda</p>
     </footer>
-    </body>
 </html>
