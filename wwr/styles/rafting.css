@@ -307,28 +307,59 @@ section .map {
 /* Image Hover Effects */
 /* Container for Horizontal Layout */
 .trip-grid {
-  display: flex; /* Aligns items horizontally */
-  gap: 25px; /* Space between articles */
-  justify-content: center; /* Centers the grid */
-  margin: 0 auto; /* Centers the entire container */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(3, auto);
+  gap: 20px;
+  justify-items: center;
+  align-items: start;
 }
 
-/* Individual Article Styling */
-.trip-descriptions article {
-  text-align: center; /* Centers content within each article */
-  max-width: 300px; /* Sets a uniform width for articles */
+.trip-grid article {
+  width: 90%; /* Ensures the articles fit nicely within the grid */
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Image Styling */
-.trip-descriptions img {
-  width: 100%; /* Makes images responsive */
-  border-radius: 8px; /* Rounds corners for aesthetics */
-  transition: transform 0.3s, box-shadow 0.3s; /* Adds hover effects */
+.trip-grid article:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
 }
 
-.trip-descriptions img:hover {
-  transform: scale(1.05); /* Adds zoom effect on hover */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Adds shadow for depth */
+.trip-grid img {
+  width: 50%;
+  height: auto;
+  border-bottom: 2px solid #ddd;
+}
+
+.trip-grid h3 {
+  font-size: 1.5rem;
+  margin: 15px 0 10px;
+}
+
+.trip-grid p {
+  font-size: 1rem;
+  color: #555;
+  margin: 0 15px 15px;
+}
+
+.trip-grid .book-now-button {
+  display: inline-block;
+  margin-bottom: 15px;
+  padding: 10px 20px;
+  background-color: #0078D4;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.trip-grid .book-now-button:hover {
+  background-color: #0053A3;
 }
 
 /* "Book Now" Button Styles */
