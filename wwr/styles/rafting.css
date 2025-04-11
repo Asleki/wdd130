@@ -310,15 +310,16 @@ section .map {
 /* Container for Horizontal Layout */
 .trip-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(3, auto);
-  gap: 20px;
+  grid-template-columns: repeat(3, 1fr); /* Ensure 3 columns per row */
+  gap: 20px; /* Space between items */
   justify-items: center;
   align-items: start;
+  margin: 0 40px; /* Adds margin on both sides */
 }
 
+/* Individual Articles */
 .trip-grid article {
-  width: 90%; /* Ensures the articles fit nicely within the grid */
+  width: 75%; /* Expand articles to fit grid cells */
   border: 2px solid #ddd;
   border-radius: 10px;
   overflow: hidden;
@@ -332,23 +333,27 @@ section .map {
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
 }
 
+/* Images */
 .trip-grid img {
-  width: 50%;
-  height: auto;
+  width: 100%; /* Make images responsive */
+  height: auto; /* Maintain aspect ratio */
   border-bottom: 2px solid #ddd;
 }
 
+/* Article Titles */
 .trip-grid h3 {
   font-size: 1.5rem;
   margin: 15px 0 10px;
 }
 
+/* Article Descriptions */
 .trip-grid p {
   font-size: 1rem;
   color: #555;
   margin: 0 15px 15px;
 }
 
+/* "Book Now" Buttons */
 .trip-grid .book-now-button {
   display: inline-block;
   margin-bottom: 15px;
@@ -364,30 +369,10 @@ section .map {
   background-color: #0053A3;
 }
 
-/* "Book Now" Button Styles */
-.book-now-button {
-  display: inline-block;
-  background-color: #269cff; /* Primary button color */
-  color: white;
-  padding: 10px 20px;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: background-color 0.3s, transform 0.3s; /* Smooth hover effect */
-  margin-top: 10px;
-}
-
-.book-now-button:hover {
-  background-color: #26c9cf; /* Lighter shade for hover */
-  transform: scale(1.1); /* Enlarges button slightly on hover */
-}
-
 /* Optional: Add space between sections */
 .trip-descriptions {
   margin-bottom: 40px;
 }
-
-
 
 
 
