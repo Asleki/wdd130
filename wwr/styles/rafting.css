@@ -144,6 +144,50 @@ section .map {
   background-color: var(--accent-color);
 }
 
+.left-sidebar {
+    position: fixed; /* Keeps the sidebar fixed on the left side */
+    top: 0; /* Aligns it to the top */
+    left: 0; /* Aligns it to the left */
+    width: 250px; /* Sets the sidebar width */
+    height: 100%; /* Extends the sidebar to full height */
+    background-color: #ffffff; /* Sets the sidebar background */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+    overflow-y: auto; /* Enables scrolling if content overflows */
+    padding: 1rem; /* Adds spacing inside the sidebar */
+}
+
+/* Apply the provided styles for .gallery-link */
+section.gallery-link nav {
+    display: flex; /* Enables flexbox for alignment */
+    flex-direction: column; /* Stacks links vertically */
+    align-items: flex-start; /* Aligns links to the left */
+    margin: 3rem; /* Space around the gallery links */
+    padding: 2rem; /* Inner spacing for better appearance */
+    width: auto; /* Restricts the width to fit content */
+    background-color: #18fcb8; /* Background color for the section */
+    border-radius: 8px; /* Softens the section corners */
+}
+
+section.gallery-link nav a {
+    text-decoration: none; /* Removes underlines from links */
+    font-size: 1.2rem; /* Adjusts link font size */
+    color: #2a7ae2; /* Sets the text color for links */
+    padding: 5px 0; /* Adds spacing between links */
+    display: block; /* Makes each link take the full width */
+    width: 100%; /* Ensures alignment to the left */
+    text-align: center; /* Centers the text within the block */
+  
+  
+}
+
+
+
+section.gallery-link nav a:hover {
+    background-color: #eaeaea; /* Changes background on hover */
+    color: #000; /* Changes text color on hover */
+}
+
+
 
 .grid-container img {
     width: auto;
@@ -408,7 +452,20 @@ section .map {
   button:hover {
     background-color: #0056b3; /* Darker shade for hover effect */
   }
-  /* Footer Section */
+
+
+.weather-widgets {
+  display: flex; /* Enables horizontal layout */
+  justify-content: space-between; /* Ensures even spacing between widgets */
+  align-items: flex-start; /* Aligns widgets at the top */
+  gap: 20px; /* Adds spacing between widgets */
+  padding: 20px; /* Adds padding inside the section */
+  background-color: #0ccee7; /* Optional: Light background for contrast */
+  border-radius: 10px; /* Adds rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Adds subtle shadow */
+}
+
+/* Footer Section */
 footer {    
     text-align: center;
     background: var(--primary-color);
