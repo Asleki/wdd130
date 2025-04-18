@@ -499,6 +499,16 @@ body {
 }
 
 
+.weather-widget {
+  background-color: #fff; /* White background for widgets */
+  border-radius: 8px; /* Rounds the widget corners */
+  padding: 20px; /* Adds padding inside the widget */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adds shadow for depth */
+  flex: 1; /* Allows widgets to grow equally */
+  margin: 10px; /* Adds spacing around each widget */
+}
+
+
 
 /* Footer Section */
 footer {    
