@@ -63,23 +63,23 @@ nav a:hover {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 400px;
+  height: 60vh; /* Adjust height as desired */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-radius: 3px;
-  position: relative; /* Enables absolute positioning for child elements */
-  width: 100%; /* Full width */
-  height: 60vh; /* Adjust height as desired */
-  text-align: center; /* Centers text */
-  color: white; /* Text color */
-  padding: 20px; /* Adds padding around the content */
-  margin: 0 auto; /* Centers the hero section within its container */
-  max-width: 1200px; /* Sets a max width for the hero section */
-  
-  
+  width: 100%; /* Ensures full width */
+  text-align: center;
+  color: white;
+  padding: 20px;
+  margin: 0; /* Removes centering restrictions */
 }
+
+
+
+
+
+
 
 .hero h1 {
   position: absolute; 
@@ -417,6 +417,31 @@ section.gallery-link nav a:hover {
 .trip-descriptions {
   margin-bottom: 40px;
 }
+
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.weather-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two widgets per row */
+  gap: 20px; /* Space between widgets */
+  padding: 20px;
+}
+
+.widget {
+  background-color: #f3f3f3;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
 
 
 
