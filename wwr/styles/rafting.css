@@ -426,6 +426,13 @@ body {
   box-sizing: border-box;
 }
 
+.widget-header {
+  background-color: #0078D4; /* Blue background */
+  color: white; /* White text */
+  padding: 10px;
+  border-radius: 5px 5px 0 0; /* Rounded top corners */
+}
+
 .weather-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* Three widgets per row */
