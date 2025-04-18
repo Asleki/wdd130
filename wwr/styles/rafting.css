@@ -428,7 +428,7 @@ body {
 
 .weather-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Two widgets per row */
+  grid-template-columns: repeat(3, 1fr); /* Three widgets per row */
   gap: 20px; /* Space between widgets */
   padding: 20px;
 }
@@ -440,6 +440,7 @@ body {
   padding: 10px;
   text-align: center;
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+  height: auto; /* Adjust as needed based on widget content */
 }
 
 
