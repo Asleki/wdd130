@@ -418,13 +418,18 @@ section.gallery-link nav a:hover {
   margin-bottom: 40px;
 }
 
-/* styles.css */
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+
+
+/* Styles for the nav element */
+#centered-nav {
+  background-color: #00e9fa;
+  padding: 20px;
+  border: 10px solid #2083f5;
+  border-radius: 8px;
+  box-shadow: 6px 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
+
 
 .widget-header {
   background-color: #0078D4; /* Blue background */
