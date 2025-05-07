@@ -1,0 +1,60 @@
+/* Define root variables for styling */
+:root {
+    --primary-color: #269cff; /* Blue for primary elements */
+    --secondary-color: #121a10; /* Green for accents */
+    --neutral-color: #d1d2df; /* Light gray for backgrounds */
+    --accent-color: #26c9cf; /* Cyan for hover effects */
+    --heading-font: 'Oswald', sans-serif; /* Heading font */
+    --body-font: 'Open Sans', sans-serif; /* Body text font */
+}
+
+/* General Styles */
+body {
+    font-family: var(--body-font);
+    margin: 0;
+    padding: 0;
+    background-color: var(--neutral-color);
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary-color);
+    padding: 1rem;
+}
+
+header .logo {
+    max-width: 150px;
+    height: auto;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    gap: 10px;
+    padding: 10px;
+    background-color: var(--primary-color);
+    
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-family: var(--heading-font);
+    padding: 5px 10px;
+    border-radius: 0px;
+    transition: all 0.3s ease-in-out;
+    
+}
+    
+
+
+nav a:hover {
+    color: var(--accent-color); /* Cyan hover effect */
+}
+h1 {
+    color: blue;
+}

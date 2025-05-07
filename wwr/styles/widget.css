@@ -1,0 +1,77 @@
+/* General Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+/* Header Styles */
+header {
+    background-color: #003f5c;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+header p {
+    margin: 5px 0;
+    font-size: 1.1em;
+}
+
+/* Content Section Styles */
+.content-section {
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 20px auto;
+    width: 80%;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.content-section h2 {
+    color: #003f5c;
+    text-align: center;
+}
+
+.content-section img {
+    max-width: 100%;
+    display: block;
+    margin: 10px auto;
+}
+
+.content-section p {
+    text-align: center;
+    color: #343a40;
+}
+
+/* List Section Styles */
+.content-section ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    color: #6d4c41; /* Neutral brown */
+}
+
+.content-section ul li {
+    margin: 5px 0;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #003f5c;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1em;
+}

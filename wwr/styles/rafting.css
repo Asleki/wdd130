@@ -1,0 +1,1084 @@
+/* Define root variables for styling */
+:root {
+    --primary-color: #269cff; /* Blue for primary elements */
+    --secondary-color: #121a10; /* Green for accents */
+    --neutral-color: #d1d2df; /* Light gray for backgrounds */
+    --accent-color: #26c9cf; /* Cyan for hover effects */
+    --heading-font: 'Oswald', sans-serif; /* Heading font */
+    --body-font: 'Open Sans', sans-serif; /* Body text font */
+}
+
+/* General Styles */
+body {
+    font-family: var(--body-font);
+    margin: 0;
+    padding: 0;
+    background-color: var(--neutral-color);
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary-color);
+    padding: 1rem;
+}
+
+header .logo {
+    max-width: 150px;
+    height: auto;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    gap: 10px;
+    padding: 10px;
+    background-color: var(--primary-color);
+    
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-family: var(--heading-font);
+    padding: 5px 10px;
+    border-radius: 0px;
+    transition: all 0.3s ease-in-out;
+    
+}
+    
+
+
+nav a:hover {
+    color: var(--accent-color); /* Cyan hover effect */
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  background-image: url('../images/herobackground.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 60vh; /* Adjust height as desired */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%; /* Ensures full width */
+  text-align: center;
+  color: white;
+  padding: 20px;
+  margin: 0; /* Removes centering restrictions */
+}
+
+
+
+
+
+
+
+.hero h1 {
+  position: absolute; 
+  left: 50%; /* Centers horizontally */
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 2.5rem;
+  padding: 0.5rem 1rem;
+  background: rgba(75, 69, 69, 0.322); /* Adds background for readability */
+  border-radius: 3px;
+  text-align: center;
+  z-index: 1;
+  top: 5.2%; /* Adjusts vertical position */
+  transform: translate(-50%, -50%); /* Ensures perfect centering */
+
+}
+
+.hero article {
+  margin-top: 50px;
+  text-align: center;
+  max-width: 1200px;
+  z-index: 0;
+}
+
+.hero .client-img {
+  width: 100%; /* Ensures responsiveness */
+  max-width: 300px; /* Sets reasonable max size */
+  height: auto;
+  border-radius: 5px;
+  margin: 20px 0;
+}
+/* Main Content */
+
+section h1, h2, p{
+  text-align: center;
+}
+
+
+
+section .map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.call-to-action {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.cta-button {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: var(--accent-color);
+}
+
+.left-sidebar {
+    position: fixed; /* Keeps the sidebar fixed on the left side */
+    top: 0; /* Aligns it to the top */
+    left: 0; /* Aligns it to the left */
+    width: 250px; /* Sets the sidebar width */
+    height: 100%; /* Extends the sidebar to full height */
+    background-color: #ffffff; /* Sets the sidebar background */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+    overflow-y: auto; /* Enables scrolling if content overflows */
+    padding: 1rem; /* Adds spacing inside the sidebar */
+}
+
+/* Apply the provided styles for .gallery-link */
+section.gallery-link nav {
+    display: flex; /* Enables flexbox for alignment */
+    flex-direction: column; /* Stacks links vertically */
+    align-items: flex-start; /* Aligns links to the left */
+    margin: 3rem; /* Space around the gallery links */
+    padding: 2rem; /* Inner spacing for better appearance */
+    width: auto; /* Restricts the width to fit content */
+    background-color: #18fcb8; /* Background color for the section */
+    border-radius: 8px; /* Softens the section corners */
+}
+
+section.gallery-link nav a {
+    text-decoration: none; /* Removes underlines from links */
+    font-size: 1.2rem; /* Adjusts link font size */
+    color: #2a7ae2; /* Sets the text color for links */
+    padding: 5px 0; /* Adds spacing between links */
+    display: block; /* Makes each link take the full width */
+    width: 100%; /* Ensures alignment to the left */
+    text-align: center; /* Centers the text within the block */
+  
+  
+}
+
+
+
+section.gallery-link nav a:hover {
+    background-color: #eaeaea; /* Changes background on hover */
+    color: #000; /* Changes text color on hover */
+}
+
+
+
+.grid-container img {
+    width: auto;
+    height: auto; /* Keeps the aspect ratio */
+    border-radius: 5px; /* Slightly rounds the edges of the image */
+    margin-bottom: 10px; /* Adds space between image and caption */
+    align-content: center; /* Centers the image within the grid item */
+}
+
+.grid-container {
+    display: flex;
+    gap: 25px; /* Space between grid items */
+    padding: 20px; /* Padding around the grid */
+    margin: 0 auto; /* Centers the grid within its container */
+    max-width: 1200px; /* Sets a max width for the grid */
+}
+
+
+
+.figure-container {
+    display: flex;
+    justify-content: space-around; /* Distributes the figures evenly */
+    margin: 20px 0;
+  }
+
+  
+  .figure-container figure {
+    display: flex;
+    flex-direction: column; /* Stacks the image and caption vertically */
+    align-items: center; /* Centers the image and caption horizontally */
+    text-align: center; /* Centers the caption text */
+    max-width: 200px; /* Sets a max width for the figure */
+    margin: 10px; /* Adds spacing between figures */
+  }
+  
+  .figure-container img {
+    width: 100%;
+    height: auto; /* Keeps the aspect ratio */
+    border: 2px solid #ccc; /* Adds a border for better visual separation */
+    border-radius: 5px; /* Slightly rounds the edges of the image */
+  }
+  
+  .figure-container figcaption {
+    margin-top: 8px; /* Adds space between the image and caption */
+    font-size: 14px;
+    color: #333; /* Adjusts the caption text color */
+  }
+
+  .grid-container figure {
+    text-align: center;
+    margin: 0;
+}
+
+.grid-container img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.grid-container figcaption {
+    margin-top: 8px;
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Trips */
+.trip-descriptions {
+  margin-bottom: 20px; /* Ensure proper spacing before the next section */
+}
+.trip-descriptions {
+  margin-bottom: 40px; /* Creates space between sections */
+}
+
+/* General Layout for the Section */
+.trip-section {
+  display: flex; /* Places tables side by side */
+  justify-content: space-between; /* Space between tables */
+  align-items: flex-start; /* Aligns tables at the top */
+  gap: 40px; /* Space between the left and right tables */
+  margin: 25px;
+}
+
+/* Trips Table Container */
+.trip-table-container {
+  width: 60%; /* Trips table takes up more space */
+}
+
+/* Currency Converter Table Container */
+.currency-converter-container {
+  width: 40%; /* Currency converter takes less space */
+}
+
+/* Table Styling */
+.styled-table,
+.currency-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 15px 0;
+  font-size: 1rem;
+  text-align: left;
+  border: 1px solid #dddddd; /* Adds border around tables */
+}
+
+/* Table Header Styling */
+.styled-table thead tr,
+.currency-table thead tr {
+  background-color: #269cff; /* Header background color */
+  color: white;
+}
+
+.styled-table th,
+.currency-table th,
+.styled-table td,
+.currency-table td {
+  padding: 12px 15px; /* Padding within cells */
+  border: 1px solid #dddddd; /* Separates columns and rows */
+}
+
+/* Row Hover Effect */
+.styled-table tbody tr:hover,
+.currency-table tbody tr:hover {
+  background-color: #d1d2df; /* Highlight row on hover */
+  cursor: pointer;
+}
+
+/* Column Hover Effect */
+.styled-table tbody td:hover,
+.currency-table tbody td:hover {
+  background-color: #e6e8f0; /* Column highlight color */
+}
+
+/* Header Text Styling */
+.styled-table th,
+.currency-table th {
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center; /* Centers header text */
+}
+
+/* Center Content Within Tables */
+.styled-table td,
+.currency-table td {
+  text-align: center;
+}
+/* General Button Styles */
+.book-now-button {
+  display: inline-block;
+  background-color: #269cff; /* Primary color for buttons */
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.3s; /* Smooth hover effects */
+  margin-top: 10px;
+}
+
+/* Button Hover Effect */
+.book-now-button:hover {
+  background-color: #26cf2f; /* Lighter shade for hover */
+  transform: scale(1.1); /* Slightly enlarge the button on hover */
+}
+
+/* Image Hover Effects */
+/* Container for Horizontal Layout */
+.trip-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Ensure 3 columns per row */
+  gap: 20px; /* Space between items */
+  justify-items: center;
+  align-items: start;
+  margin: 0 40px; /* Adds margin on both sides */
+}
+
+/* Individual Articles */
+.trip-grid article {
+  width: 75%; /* Expand articles to fit grid cells */
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.trip-grid article:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Images */
+.trip-grid img {
+  width: 100%; /* Make images responsive */
+  height: auto; /* Maintain aspect ratio */
+  border-bottom: 2px solid #ddd;
+}
+
+/* Article Titles */
+.trip-grid h3 {
+  font-size: 1.5rem;
+  margin: 15px 0 10px;
+}
+
+/* Article Descriptions */
+.trip-grid p {
+  font-size: 1rem;
+  color: #555;
+  margin: 0 15px 15px;
+}
+
+/* "Book Now" Buttons */
+.trip-grid .book-now-button {
+  display: inline-block;
+  margin-bottom: 15px;
+  padding: 10px 20px;
+  background-color: #0078D4;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.trip-grid .book-now-button:hover {
+  background-color: #0053A3;
+}
+
+/* Optional: Add space between sections */
+.trip-descriptions {
+  margin-bottom: 40px;
+}
+
+
+
+/* Styles for the nav element */
+#centered-nav {
+  background-color: #00e9fa;
+  padding: 20px;
+  border: 10px solid #2083f5;
+  border-radius: 8px;
+  box-shadow: 6px 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+
+.widget-header {
+  background-color: #0078D4; /* Blue background */
+  color: white; /* White text */
+  padding: 10px;
+  border-radius: 5px 5px 0 0; /* Rounded top corners */
+}
+
+.weather-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three widgets per row */
+  gap: 20px; /* Space between widgets */
+  padding: 20px;
+}
+
+.widget {
+  background-color: #f3f3f3;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+  height: auto; /* Adjust as needed based on widget content */
+}
+
+
+.nav-wrapper {
+  display: flex;             /* Enables Flexbox */
+  justify-content: center;   /* Centers horizontally */
+  align-items: center;       /* Centers vertically */
+
+}
+ h1 {
+  margin-bottom: 20px; /* Adds spacing between h1 and nav */
+  font-size: 2rem;     /* Adjusts the font size */
+  color: #333;         /* Sets a contrasting color for the text */
+  text-align: center;  /* Centers the h1 text */
+  flex-direction: column;
+  
+}
+
+.centered-nav {
+  background-color: #007BFF; /* Blue background for the nav */
+  padding: 20px;
+  border-radius: 10px;       /* Smooth, rounded corners */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  display: flex;             /* Flexbox for content inside the nav */
+  flex-direction: column;    /* Ensures a vertical layout */
+  align-items: center;       /* Centers the list text horizontally */
+  width: 80%; /* Sets a max width for the nav */
+  margin: 0 auto; /* Centers the nav within its parent */
+}
+
+.centered-nav ul {
+  list-style: none; /* Removes default bullet points */
+  padding: 0;
+  margin: 0;
+}
+
+.centered-nav li {
+  margin: 10px 0; /* Spacing between list items */
+}
+
+.centered-nav a {
+  text-decoration: none;  /* Removes underline */
+  color: white;           /* White text color */
+  border-radius: 5px;      /* Rounded corners for links */
+  transition: background-color 0.3s ease; /* Smooth hover effect */
+  display: inline-block;  /* Ensures proper alignment */
+}
+
+.centered-nav a:hover {
+  background-color: #004080; /* Slightly darker blue on hover */
+}
+
+
+.client-reviews {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+.reviews-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.review {
+  background-color: #91bce7;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+  width: 300px;
+  position: relative;
+}
+
+.review p {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.client-name {
+  font-weight: bold;
+  font-size: 18px;
+  text-align: left;
+}
+
+.client-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  display: block;
+}
+
+.star-ratings {
+  margin-top: 10px;
+  text-align: left;
+}
+
+.star-ratings img {
+  width: 20px;
+  height: 20px;
+}
+
+/* General Styles */
+
+/* Gallery Section */
+.gallery {
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+}
+
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin: 20px auto;
+}
+
+.gallery-item {
+  background-color: #a7f1f7;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Hover Effect for Images */
+.gallery-item img:hover {
+  transform: scale(1.05);
+}
+
+/* Description Styling */
+.description {
+  font-size: 14px;
+  color: #333;
+  margin-top: 8px;
+}
+
+.equipment-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.equipment-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #63b7fc;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.equipment-item {
+  flex: 1;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.recommended-equipment {
+  flex: 1;
+  text-align: left;
+  background-color: #5ef3f8;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.equipment-item img, .recommended-equipment img {
+  width: 90%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.recommended-equipment img {
+  width: 75%; /* Ensure recommended image is 75% size of main */
+}
+
+.buy-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 10px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.buy-btn:hover {
+  background-color: #0056b3;
+}
+
+
+/* Styling for the Interesting Fact section */
+.interesting-fact,
+.interesting-facts {
+  text-align: center; /* Initially center everything within the section */
+  padding: 40px 20px; /* Add some top and bottom padding to the section */
+}
+
+.interesting-fact h2,
+.interesting-facts h2 {
+  font-size: 2.5rem; /* Larger heading */
+  color: var(--primary-color); /* Use your primary color */
+  margin-bottom: 30px; /* Space between heading and blockquote */
+  font-family: var(--heading-font); /* Use your heading font */
+  text-align: center; /* Ensure heading is centered */
+}
+
+.interesting-fact blockquote,
+.interesting-facts blockquote {
+  background-color: #f9f9f9; /* Light background for emphasis */
+  border-left: 5px solid var(--accent-color); /* Accent color for the left border */
+  padding: 30px;
+  margin: 40px auto; /* Center the blockquote horizontally */
+  max-width: 70%; /* Control the width of the emphasized paragraph */
+  font-style: italic;
+  color: #555;
+  border-radius: 8px; /* Soft rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  font-size: 1.2rem; /* Slightly larger paragraph text */
+  line-height: 1.7;
+}
+
+/* styles/rafting.css (Specific to the dictionary terms) */
+
+#rafting-dictionary-page {
+  max-width: 960px; /* Limit page width for better readability */
+  margin: 20px auto; /* Center the section */
+  background-color: #efeaea;
+  padding: 30px;
+  border-radius: 8px; /* Slightly rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+#rafting-dictionary-page h1 {
+  font-family: 'Oswald', sans-serif; /* Use the Oswald font for headings */
+  font-size: 2.5rem;
+  color: #007bff; /* Blue heading color - adjust to your brand */
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+#rafting-dictionary-page .date {
+  color: #777; /* Light gray for the date */
+  font-style: italic;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#rafting-dictionary-page p {
+  line-height: 1.8;
+  margin-bottom: 15px;
+}
+
+#rafting-dictionary-page h2 {
+  font-family: 'Oswald', sans-serif; /* Use Oswald for subheadings */
+  font-size: 2rem;
+  color: #28a745; /* Green subheading color - adjust to your brand */
+  margin-top: 30px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #ddd; /* Light gray bottom border */
+  padding-bottom: 10px;
+}
+
+#rafting-dictionary-page ol {
+  list-style-type: decimal; /* Use numbered list */
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+#rafting-dictionary-page ol li {
+  margin-bottom: 10px;
+  line-height: 1.7;
+}
+
+#rafting-dictionary-page ol li strong {
+  font-weight: bold; /* Make the terms bold */
+  color: #333; /* Dark gray for the terms */
+}
+
+.zambezi-ad-bar {
+    background-color: #fdd835; /* A bright, attention-grabbing yellow - adjust to your brand */
+    color: #333; /* Dark text for readability */
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.zambezi-ad-bar p {
+    margin-right: 20px;
+    margin-bottom: 0; /* Remove default paragraph margin */
+}
+
+.zambezi-ad-bar .ad-button {
+    background-color: #007bff; /* A contrasting blue for the button - adjust to your brand */
+    color: #fff;
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+}
+
+.zambezi-ad-bar .ad-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+  form {
+    display: flex;
+    flex-direction: column; /* Ensures the form content stacks vertically */
+    align-items: center; /* Horizontally centers the content within the form */
+    justify-content: center; /* Ensures vertical alignment if needed */
+    margin: 0 auto; /* Centers the form itself within its container */
+    max-width: 400px; /* Sets a maximum width for the form to prevent it from stretching too much */
+    padding: 20px; /* Adds some padding for spacing */
+    border: 2px solid #ccc; /* Adds a border around the form */
+    border-radius: 8px; /* Rounds the form edges */
+    background-color: #f9f9f9; /* Adds a light background to distinguish it */
+  }
+  
+  label, input, textarea, fieldset, button {
+    width: 100%; /* Makes input fields stretch to the form's width */
+    margin-bottom: 12px; /* Adds spacing between elements */
+  }
+  
+  button {
+    width: auto; /* Makes the button adjust to its content */
+    padding: 10px 20px; /* Adds padding to the button for a better look */
+    background-color: #007BFF; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none; /* Removes button border */
+    border-radius: 5px; /* Slightly rounds button corners */
+    cursor: pointer; /* Makes it obvious the button is clickable */
+  }
+  
+  button:hover {
+    background-color: #0056b3; /* Darker shade for hover effect */
+  }
+
+
+.weather-widgets {
+  display: flex; /* Enables horizontal layout */
+  justify-content: space-between; /* Ensures even spacing between widgets */
+  align-items: flex-start; /* Aligns widgets at the top */
+  gap: 20px; /* Adds spacing between widgets */
+  padding: 20px; /* Adds padding inside the section */
+  background-color: #0ccee7; /* Optional: Light background for contrast */
+  border-radius: 10px; /* Adds rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Adds subtle shadow */
+}
+
+
+.weather-widget {
+  background-color: #fff; /* White background for widgets */
+  border-radius: 8px; /* Rounds the widget corners */
+  padding: 20px; /* Adds padding inside the widget */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adds shadow for depth */
+  flex: 1; /* Allows widgets to grow equally */
+  margin: 10px; /* Adds spacing around each widget */
+}
+
+.trip-details {
+  margin: 1rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 20px; /* Space between the image and the description */
+}
+.zambezi-rafting p {
+  margin: 1rem;
+  text-align: left; /* Aligns text to the left for better readability */
+}
+
+.zambezi-rafting h2 {
+  font-size: 2rem; /* Adjusts the font size for the heading */
+  color: #1a1a1d; /* Deep blue for the heading */
+  margin-bottom: 10px; /* Space below the heading */
+  text-align: left; /* Aligns heading to the left */
+}
+.zambezi-trip {
+  flex-basis: 50%; /* Image takes 50% of the container's width */
+}
+
+.zambezi-rafting img {
+  border-radius: 1rem; /* Rounds the image corners */
+  
+}
+.trip-image {
+  width: 100%; /* Ensures the image fills its container */
+  height: auto; /* Keeps the image's proportions */
+  border-radius: 10px; /* Optional: Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Depth effect */
+}
+
+.trip-description {
+  flex-basis: 50%; /* Description takes the other 50% */
+}
+
+.trip-description h3 {
+  font-size: 24px; /* Styling for the heading */
+  margin-bottom: 10px;
+  color: #333; /* Adjust color to fit your design */
+}
+
+.trip-description p {
+  font-size: 16px; /* Text size for readability */
+  line-height: 1.6; /* Improved text spacing */
+  color: #555; /* Softer contrast for text */
+}
+
+.cta-button {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #007BFF; /* Button background */
+  color: white; /* Button text color */
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
+
+/* Styling for the Interesting Facts section */
+.interesting-facts {
+  margin: 30px 0; /* Adds space above and below */
+  padding: 20px; /* Internal spacing */
+  background: #7abafa; /* Soft off-white background for better readability */
+  border-radius: 10px; /* Smooth, rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds depth with a subtle shadow */
+}
+
+/* Styling for the section header */
+.interesting-facts h2 {
+  font-size: 1.8rem; /* Enlarged font size for emphasis */
+  color: #0057d8; /* Deep blue for a striking header */
+  border-bottom: 2px solid #0057d8; /* Adds a bold divider line below the header */
+  margin-bottom: 15px; /* Creates space under the header */
+}
+
+/* Styling for the text inside */
+.interesting-facts p {
+  font-size: 1rem; /* Standard text size */
+  color: #444; /* Neutral dark gray for easy readability */
+  line-height: 1.6; /* Improves text spacing for better legibility */
+}
+
+.hiking-advice {
+  background-color: #8bc6f7; /* Light grey background for readability */
+  padding: 20px; /* Adds spacing inside the section */
+  border: 2px solid #007BFF; /* Blue border for emphasis */
+  border-radius: 8px; /* Rounded corners for a smoother design */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  max-width: 700px; /* Restricts the width for better formatting */
+  margin: 20px auto; /* Centers the section */
+}
+
+.hiking-advice p {
+  font-size: 16px; /* Font size for readability */
+  line-height: 1.6; /* Improves line spacing */
+  color: #333; /* Dark grey text color */
+  margin-bottom: 15px; /* Spacing between paragraphs */
+}
+
+.hiking-advice strong {
+  color: #007BFF; /* Blue color for emphasis */
+  font-weight: bold; /* Makes it stand out */
+}
+
+/* styles/rafting.css */
+
+/* Table Styles */
+table {
+  width: 100%;
+  border-collapse: collapse; /* Collapse borders for a cleaner look */
+  margin-top: 20px;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  border-radius: 8px; /* Slightly rounded corners */
+  overflow: hidden; /* Hide overflow for rounded corners on cells */
+}
+
+caption {
+  font-size: 1.1em;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+th, td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd; /* Light gray bottom border for rows */
+}
+
+th {
+  background-color: #0f85f3; /* Green header background */
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Alternate row background for better readability */
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Hover effect on table rows */
+tbody tr:hover {
+  background-color: #e0f7e0; /* Light green on hover */
+  transition: background-color 0.3s ease;
+}
+
+/* Style for links within table cells */
+td a {
+  color: #007bff; /* Blue link color */
+  text-decoration: none;
+}
+
+td a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive adjustments (optional) */
+@media screen and (max-width: 600px) {
+  table {
+      border: 0;
+  }
+
+  caption {
+      font-size: 0.9em;
+  }
+
+  thead {
+      border: none;
+      clip: rect(0 0 0 0);
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      width: 1px;
+  }
+
+  tr {
+      border-bottom: 3px solid #ddd;
+      display: block;
+      margin-bottom: .625em;
+  }
+
+  td {
+      border-bottom: 1px solid #ddd;
+      display: block;
+      font-size: .8em;
+      text-align: right;
+  }
+
+  td::before {
+      /* Add data labels */
+      content: attr(data-label);
+      float: left;
+      font-weight: bold;
+      text-transform: uppercase;
+  }
+}
+
+
+
+
+
+
+
+
+
+/* Footer Section */
+footer {    
+    text-align: center;
+    background: var(--primary-color);
+    padding: 1rem;
+    color: white;
+    margin-top: 20px;
+}
+
+footer .social-icons {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+footer .social-icons img {
+    width: 30px;
+    width: 30px; /* Standard icon size */
+    height: auto; /* Maintain aspect ratio */
+    display: flex; /* Keep icons in a row */
+    filter: brightness(0.9); /* Slightly reduce brightness for style */
+}
+
+
+
