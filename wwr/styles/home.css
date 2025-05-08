@@ -1,49 +1,127 @@
-nav{
+nav {
     background-color: darkblue;
     padding: 10px;
-
-}
-nav a{
+  }
+  
+  nav a {
     color: white;
     display: block;
     padding: 20px;
-}
-h1{
+  }
+  
+  h1 {
     color: darkblue;
-}
-img{
+  }
+  
+  img {
     width: 150px;
     height: auto;
     border: 1px solid black;
     padding: 2px;
     box-shadow: 0 0 30px gray;
-}
-p{
+  }
+  
+  p {
     padding: 10px;
-}
-main {
+  }
+  
+  main {
     width: 70%;
     margin: 0 auto;
-}
-
-aside {
-    width: 300px; 
-    margin: 20px auto; 
-    border: 1px solid #ccc; 
-    padding: 15px; 
-    background-color: #f0f0f0; 
-    color: #333; 
-}
-aside img {
+  }
+  
+  aside {
+    width: 300px;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    padding: 15px;
+    background-color: #f0f0f0;
+    color: #333;
+  }
+  
+  aside img {
     width: 200px;
     height: auto;
-}
-p {
+  }
+  
+  p {
     padding: 0;
-}
-
-footer {
+  }
+  
+  footer {
     margin-top: 20px;
     border-top: 1px solid #ccc;
     text-align: center;
-}
+  }
+  
+  /* Media query for screens smaller than 1200px (large desktops) */
+  @media screen and (max-width: 1200px) {
+    main {
+      width: 90%; /* Increase width for smaller desktops */
+    }
+  
+    aside {
+      width: 80%; /* Make aside wider on smaller desktops */
+    }
+  }
+  
+  /* Media query for screens smaller than 992px (tablets) */
+  @media screen and (max-width: 992px) {
+    main {
+      width: 95%; /* Take up more space on tablets */
+    }
+  
+    aside {
+      width: 90%; /* Make aside almost full-width on tablets */
+    }
+  
+    /* Make nav links horizontal on tablets */
+    nav a {
+      display: inline-block;
+      width: auto;
+      padding: 10px;
+    }
+  }
+  
+  /* Media query for screens smaller than 768px (smartphones) */
+  @media screen and (max-width: 768px) {
+    main {
+      width: 100%; /* Full width on smartphones */
+    }
+  
+    aside {
+      width: 100%; /* Full width on smartphones */
+      margin: 10px auto; /* Adjust margin for smartphones */
+    }
+  
+    aside img {
+      width: 90%; /* Adjust image width for smartphones */
+      margin: 10px auto;
+       display: block;
+    }
+  
+    /* Stack nav links on smartphones */
+    nav a {
+      display: block;
+      width: 100%;
+      text-align: center;
+      padding: 10px;
+    }
+    nav {
+      padding: 0;
+    }
+  }
+  
+  /*optional*/
+  @media screen and (max-width: 480px){
+    h1{
+      font-size: 1.2em;
+    }
+    p{
+      font-size: 0.9em;
+    }
+    footer{
+      font-size: 0.8em;
+    }
+  }
+  
