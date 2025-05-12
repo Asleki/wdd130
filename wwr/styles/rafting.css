@@ -1083,3 +1083,252 @@ footer .social-icons img {
 
 
 
+/* styles/rafting.css */
+
+/* Existing styles (as provided in the HTML) */
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #222;
+    color: white;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    height: 50px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 1em;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+}
+
+.widget-head {
+    background-color: #ddd;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-left: 5px solid #007bff;
+}
+
+.weather-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.zambezi-rafting h1 {
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.trip-details {
+    display: flex;
+    margin-bottom: 20px;
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.zambezi-trip {
+    flex: 1;
+    margin-right: 15px;
+}
+
+.trip-image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.trip-description {
+    flex: 2;
+}
+
+.trip-description h3 {
+    color: #28a745;
+    margin-top: 0;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #dc3545;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.cta-button:hover {
+    background-color: #c82333;
+}
+
+.interesting-facts, .hiking-advice, .packing-list, .interesting-fact {
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-left: 5px solid #ffc107;
+    border-radius: 5px;
+}
+
+.interesting-facts h2, .hiking-advice h2, .packing-list h2, .interesting-fact h2 {
+    color: #ff9800;
+    margin-top: 0;
+}
+
+.trip-details, .interesting-facts, .hiking-advice, .packing-list, .interesting-fact {
+    margin-bottom: 20px;
+}
+
+figure {
+    margin: 15px 0;
+    text-align: center;
+}
+
+figure img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+figcaption {
+    font-size: 0.9em;
+    color: #666;
+    margin-top: 5px;
+}
+
+blockquote {
+    border-left: 3px solid #6c757d;
+    padding-left: 15px;
+    font-style: italic;
+    color: #555;
+}
+
+blockquote ul {
+    padding-left: 20px;
+}
+
+blockquote li strong {
+    font-weight: bold;
+}
+
+.social-icons {
+    text-align: center;
+    padding: 1em 0;
+    background-color: #333;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.social-icons img {
+    height: 30px;
+    width: auto;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.social-icons img:hover {
+    opacity: 1;
+}
+
+footer p {
+    text-align: center;
+    color: white;
+    background-color: #222;
+    padding: 1em 0;
+    margin: 0;
+    font-size: 0.9em;
+}
+
+/* Media Queries for Small Screens */
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 0.5em;
+    }
+
+    .logo {
+        margin-bottom: 0.5em;
+    }
+
+    nav {
+        width: 100%;
+        text-align: center;
+        margin-top: 0.5em;
+    }
+
+    nav a {
+        display: block;
+        margin: 0.5em 0;
+        margin-left: 0;
+    }
+
+    .weather-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .trip-details {
+        flex-direction: column;
+    }
+
+    .zambezi-trip {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+
+    .trip-description {
+        flex: none;
+    }
+
+    .social-icons a {
+        margin: 0 10px;
+    }
+
+    .social-icons img {
+        height: 25px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 1.8em;
+    }
+
+    h2 {
+        font-size: 1.4em;
+    }
+
+    .logo {
+        height: 40px;
+    }
+
+    .cta-button {
+        padding: 8px 12px;
+        font-size: 0.9em;
+    }
+}
